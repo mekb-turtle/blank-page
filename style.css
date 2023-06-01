@@ -1,0 +1,99 @@
+a {
+	color: var(--pink);
+	cursor: pointer;
+	text-decoration: none;
+}
+:focus {
+	outline-style: solid;
+	outline-color: var(--pink);
+	outline-width: 2px;
+}
+
+.underline {
+	text-decoration: underline;
+}
+.bold, b, strong {
+	font-weight: 700;
+}
+.italic, i, em {
+	font-style: italic;
+}
+pre, .pre {
+	white-space: pre-wrap;
+}
+
+html {
+	background-color: var(--base);
+}
+
+html, body {
+	color: var(--text);
+	font-family: "Ubuntu", "Roboto", "FreeSans", "Segoe UI", sans-serif;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+body {
+	background: transparent;
+}
+
+body {
+	padding: 32px;
+}
+@media screen and (min-width: 751px) and (max-width: 800px) {
+	body {
+		padding: 16px !important;
+	}
+}
+@media screen and (max-width: 750px) {
+	body {
+		padding: 8px !important;
+	}
+}
+
+code, pre, kbd {
+	font-family: inherit;
+	background-color: var(--surface0);
+	border-radius: 10px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	49.999% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.blink {
+	animation: blink 0.75s infinite;
+}
+
+.margr {
+	margin-right: 4px;
+}
+.margb {
+	margin-bottom: 4px;
+}
+.lh {
+	vertical-align: bottom;
+}
+.nobullet {
+	list-style-type: none;
+}
+.fullscreen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -99;
+}
